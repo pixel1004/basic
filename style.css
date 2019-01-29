@@ -1,0 +1,252 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            width: 100%;
+            height: 100%;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            border: 0;
+        }
+        nav a{
+            color: #333;
+        }
+        button, input[type=button], input[type=submit], input[type=reset]{
+            border: 0;
+            outline: 0;
+            background-color: #fff;
+        }
+        #ck{ /*체크박스 안보이게 처리*/
+            /*display: none;*/
+        }
+        .Wrap{
+            width: 100%;
+            height: 100%;
+        }
+        .pnb{
+            position: fixed;
+            right: -50%;
+            top: 0;
+            width: 40%;
+            height: 100%;
+            z-index: 999;
+         /*   background: #333;*/
+            background:rgba(0,0,0,0.7);
+
+            transition: 0.8s;
+        }
+        .pnb a{
+            display: block;
+            width: 100%;
+            text-indent: 20%;
+            color: #fff;
+            line-height: 50px;
+            font-size: 24px;
+        }
+        .closeBtn{
+            display: block;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+        /*input박스가 체크가 된 상태라면 .pnb 가 웹브라우저 안쪽으로 나타나게 해라.   + : 바로 연결되어있는 */
+        #ck:checked + .pnb{right: 0;}
+
+
+
+        .hd{
+            width: 100%;
+            height: 100px;
+        }
+        .hdWrap{
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .logo{
+            position: absolute;
+            top: 10px;
+            z-index: 10;
+            left: 0;
+        }
+        .openBtn{
+            display: block;
+            width: 80px;
+            padding: 25px;
+            height: 80px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            z-index: 10;
+        }
+        .openBtn .line{
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin-bottom: 6px;
+            background: #000;
+        }
+        .aniImg{
+            width: 100px;
+            margin: 0 auto;
+            line-height: 80px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        #ck:checked + .pnb{
+           
+        }
+        .content{
+            width: 100%;
+            clear: both;
+        }
+        .conWrap{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .col6{
+            display: block;
+            width: 50%;
+            float: left;
+            height: auto;
+            position: relative;
+        }
+        .col6 .banImg{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .hvBox{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(61, 170, 225, 0.8);
+            text-align: center;
+            padding: 25%;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .title{
+            color: #fff;
+            line-height: 3;
+            font-size: 24px;
+        }
+        .more{
+            display: block;
+            width: 80px;
+            height: 80px;
+            color: #fff;
+            font-size: 30px;
+            line-height: 80px;
+            text-align: center;
+            margin: 10px auto;
+        }
+        .col6:hover .hvBox{
+            opacity: 1;
+        }
+        .ft{
+            clear: both;
+            width: 100%;
+            padding-top: 40px;
+            color: #fff;
+        }
+        .ftWrap{
+            width: 1200px;
+            background: #222;
+            margin: 0 auto;
+            height: 500px;
+        }
+        .ftRow1 ul{
+            float: left;
+            padding: 20px;
+        }
+        .ftRow1 ul li{
+            line-height: 1.8;
+            font-size: 14px;
+            color: #ddd;
+        }
+        .ftRow1 ul li .wtxt{
+            color: #fff;
+            font-size: 6px;
+            font-weight: 700;
+        }
+        .ftRow1 a{
+            display: block;
+            width: 200px;
+            text-align: center;
+            color: #fff;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            border: 3px solid #fff;
+            float: right;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .ftRow1 a:hover{
+            color: #f24;
+            border: 3px solid #f24;
+        }
+        .ftRow2{
+            clear: both;
+            border-top: 1px solid #ccc;
+        }
+        .ftRow2 .sns{
+            margin: 10px auto;
+            width: 145px;
+        }
+        .ftRow2 .sns li{
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+        .ftRow2 .sns li a{
+            display: block;
+            line-height: 50px;
+            font-size: 36px;
+            color: #ccc;
+        }
+        .ftRow2 .sns li a:hover{
+            color: #fff;
+        }
+        .copyright{
+            clear: both;
+            line-height: 40px;
+            text-align: center;
+        }
+       /*모바일 적용시키기 위해서*/
+        @media screen and (max-width:767px) {
+            .hdWrap, .conWrap, .ftWrap{width: 90%;}
+            .aniImg{display: none;}
+            .col6{width: 100%;}
+            .hvBox{background: rgba(61, 170, 225, 0.1); opacity: 1; padding-top: 20%;}
+            .title{font-size: 16px;}
+            .ftWrap{height: 700px;}
+            .ftRow1 a{clear: both; float: none; margin: 5px auto;}
+        }
+         @media screen and (min-width:768px) and (max-width:959px){
+            .hdWrap, .conWrap, .ftWrap{width: 90%;}
+            .aniImg{display: none;}
+            .col6{width: 100%;}
+            .hvBox{background: rgba(61, 170, 225, 0.1); opacity: 1; padding-top: 20%;}
+            .title{font-size: 16px; line-height: 1.4;}
+            .ftWrap{height: 680px;}
+        }

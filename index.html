@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>반응형 레이아웃2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon24.png" type="image/x-icon">
+    <link rel="icon" href="favicon32.png" sizes="32x32" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js" type="text/javascript"></script>
+    <!-- 시멘틱 태그 읽어들이는 js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="Wrap">
+       <input type="checkbox" id="ck">
+       <aside class="pnb">
+             <label for="ck" class="closeBtn"><i class="fa fa-times-circle"></i></label>
+             <nav class="gnb">
+                 <ul class="menu">
+                     <li><a href="">쇼핑하기</a></li>
+                     <li><a href="">반품문의</a></li>
+                     <li><a href="">오시는길</a></li>
+                     <li><a href="">공지사항</a></li>
+                     <li><a href="">상담원연결</a></li>
+                 </ul>
+             </nav>
+         </aside>
+        <header class="hd">
+            <!--(a.logo>img)(div.aniImg>img)(lable>span.line*3)-->
+            <div class="hdWrap">
+                <a href="" class="logo"><img src="./img/logo.png" width="82" alt="logo"></a>
+                <div class="aniImg">I<img src="./img/icon-2.png" width="20" alt="">YOU</div>
+                <label for="ck" class="openBtn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+        </header>
+        <div class="content">
+            <!--div.conWrap>(a.col6>img+(div.hvBox>img+h1.title+span.more))*18-->
+            <div class="conWrap">
+                <a href="" class="col6">
+                    <img src="./img/m1.jpg" class="banImg" alt="배너1">
+                    <div class="hvBox">
+                        <img src="./img/icon-3.png" alt="">
+                        <h1 class="title">사무용품</h1>
+                        <span class="more"><i class="fa fa-fight"></i></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m2.jpg" class="banImg" alt="배너2">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">오피스용품</h1>
+                        <span class="more"><i class="fa fa-times-circle"></i></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m3.jpg" class="banImg" alt="배너3">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">필기용품</h1>
+                        <span class="more"><i class="fa fa-times-circle"></i></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m4.jpg" class="banImg" alt="배너4">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">마우스</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m5.jpg" class="banImg" alt="배너5">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">필기구</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m6.jpg" class="banImg" alt="배너6">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">색연필</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m7.jpg" class="banImg" alt="배너7">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">노트/책</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m8.jpg" class="banImg" alt="배너8">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">다이어리/메모지</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m9.jpg" class="banImg" alt="배너9">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">레코드북</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m10.jpg" class="banImg" alt="배너10">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">피규어</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m11.jpg" class="banImg" alt="배너11">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">악세서리</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m12.jpg" class="banImg" alt="배너12">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">조명</h1>
+                        <span class="more"></span>
+                    </div>
+                </a> 
+                <a href="" class="col6">
+                    <img src="./img/m13.jpg" class="banImg" alt="배너13">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">스탠드조명</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m14.jpg" class="banImg" alt="배너14">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">시계</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m15.jpg" class="banImg" alt="배너15">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">디자인시계</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m16.jpg" class="banImg" alt="배너16">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">인형</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m17.jpg" class="banImg" alt="배너17">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">핸드메이드</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+                <a href="" class="col6">
+                    <img src="./img/m18.jpg" class="banImg" alt="배너18">
+                    <div class="hvBox">
+                        <img src="" alt="">
+                        <h1 class="title">액자</h1>
+                        <span class="more"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer class="ft">
+            <!--div.ftWrap>(.ftRow1>div.col6>(ul.cp1>li*4)*2)-->
+            <div class="ftWrap">
+                <div class="ftRow1">
+                    <div class="col6">
+                        <ul class="cp1">
+                            <li class="wtxt">BUSAN OFFICE</li>
+                            <li>부산광역시 해운대구</li>
+                            <li>APEC로 17,센텀리더스마크 24F</li>
+                            <li>070-7566-1981</li>
+                            <i class="fa fa-map-marker"></i>
+                        </ul>
+                        <ul class="cp2">
+                            <li class="wtxt">SEOUL OFFICE</li>
+                            <li>서울특별시 마포구</li>
+                            <li>서교동 379-13</li>
+                            <li>02-1234-1234</li>
+                            <i class="fa fa-map-marker"></i>
+                        </ul>
+                    </div>
+                    <div class="col6">
+                    <a href="" class="res1">문의하기</a>
+                    <a href="" class="res2">반품신청</a>
+                    </div>
+                </div>
+                <!--div.ftRow2>(ul.sns>(li>a)*3+p.copyright)-->
+                <div class="ftRow2">
+                    <ul class="sns">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <p class="copyright">COPYRIGHT 2018.10.10 shopping. ALL RIGHTS RESERVED.</p>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
